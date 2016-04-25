@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+<!--
+In this file, comments are used to identify different parts of the code by letter.
+The Sporclone Instructions file will refer to letters when describing the sequence of
+steps necessary to create a working Sporclone game. Complete the project according
+to the order of the NUMBERED instructions, not the order of the letters.
+DO NOT DELETE THE LETTER COMMENTS AFTER YOU COMPLETE STEPS!!!!!
+-->
+
+
+<html>
+<head>
+<!-- a. -->
+<title>Sporclone: Name the College Mascot</title>
+
+<!-- b. -->
+<link rel="stylesheet" href="css/main.css">
+
+<!-- You may optionally style the table in your answers section here. -->
+<style>
+table {
+}
+tr {
+}
+th {
+}
+td {
+}
+table span {
+    /* applies only to span tags within table */
+    border: 1px solid #AAAAAA;
+    display: inline-block;
+    height: 20px;
+    width: 200px;
+}
+</style>
+
+<script>
+/*********** Game configuration ***********/
+// c.
+var answers = ["Aggies", "Bears", "Buckeyes", "Bulldogs", "Hokies", "Panthers", "Rainbow Warriors", "Redhawks" , "Scarlet Knights", "Tigers", "Volunteers", "Wildcats"];
+// d.
+var time_limit = 90; // in seconds
+</script>
+
+</head>
+
+
+<!-- e. -->
+<body onload="setup()">
+    
+<header>
+    <h1>Sporclone</h1>
+</header>
+
+<div class="frame">
+
+    <section>
+
+        <aside>
+            <h3>More Games</h3>
+            <ul>
+            <!-- f. -->
+            <li><a href="#">Puzzle Name</a></li>
+            <li><a href="#">Puzzle Name</a></li>
+            </ul>
+        </aside>
+
+        <!-- g. -->
+        <img class="icon" src="img/mascot_icon.jpg" alt="mascots">
+
+        <!-- h. -->
+        <h2>Name all of the college mascots based on their team helmets.</h2>
+
+    </section>
+
+    <section>
+
+        <div class="column">
+            <!-- i. -->
+            <input id="start" type="button" onclick="start()" value="PLAY GAME">
+        </div>
+
+        <div class="column">
+            <!-- j. -->
+            <h3>Enter a mascot:</h3>
+
+            <!-- k.  -->
+            <input id="guess" type="text" onkeyup="check()">
+        </div>
+
+        <div class="column">
+            <h3>Score</h3>
+            <span id="score"></span>
+        </div>
+
+        <div class="column">
+            <h3>Time</h3>
+            <span id="time"></span>
+        </div>
+
+    </section>
+
+    <section>
+
+        <!-- l. -->
+        <table>
+        <tr>
+        <td><img class="align-center" src= "img/aggies.jpg" alt="Aggies"><br><span id="answer0"></span></td>
+        <td><img class="align-center" src= "img/bears.jpg" alt="Bears"><br><span id="answer1"></span></td>
+        <td><img class="align-center" src= "img/buckeyes.jpg" alt="Buckeyes"><br><span id="answer2"></span></td>
+        <td><img class="align-center" src= "img/bulldogs.jpg" alt="Bulldogs"><br><span id="answer3"></span></td>
+        </tr>
+        <tr>
+        <td><img class="align-center" src= "img/hokies.jpg" alt="Hokies"><br><span id="answer4"></span></td>
+        <td><img class="align-center" src= "img/panthers.jpg" alt="Panthers"><br><span id="answer5"></span></td>
+        <td><img class="align-center" src= "img/rainbow_warriors.jpg" alt="Rainbow Warriors"><br><span id="answer6"></span></td>
+        <td><img class="align-center" src= "img/redhawks.jpg" alt="Redhawks"><br><span id="answer7"></span></td>
+        </tr>
+        <tr>
+        <td><img class="align-center" src= "img/scarlet_knights.jpg" alt="Scarlet Knights"><br><span id="answer8"></span></td>
+        <td><img class="align-center" src= "img/tigers.jpg" alt="Tigers"><br><span id="answer9"></span></td>
+        <td><img class="align-center" src= "img/volunteers.jpg" alt="Volunteers"><br><span id="answer10"></span></td>
+        <td><img class="align-center" src= "img/wildcats.jpg" alt="Wildcats"><br><span id="answer11"></span></td>
+        </tr>
+        </table>
+
+    </section>
+
+    <footer>
+
+        <!-- m. -->
+        <p>Quiz by Morgan Theys</p>
+
+    </footer>
+
+</div>
+
+<!-- n. -->
+<script src="js/sporclone.js"></script>
+
+</body>
+</html>
